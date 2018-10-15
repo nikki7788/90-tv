@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!--bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!--Bootstrap-rtl-->
+    <link href="css/bootstrap-rtl-moosavi.css" rel="stylesheet" />
+    <!--<link href="css/bootstrap-rtl.min.css" rel="stylesheet" />-->
+    <!--My css style sheet-->
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- General container-->
+    <div id="container" class="container-fluid" style="background-color:khaki">
+
+        <!--header-->
+        <!--برای اینکه در سایز
+        xs,sm
+        هدر حذف شود و در سایز
+        وبزرگتر هدر نمایش داده شود از دستورmd
+        استقاده کردیمd-none d-md-block-->
+        <div id="header" class="container-fluid d-none d-sm-block " style="background-color:chartreuse">
+
+            <!--برای اینکه فاصله بگیرند از کنار و وسط قرار بگیرند-->
+            <div class="container">
+
+                <!--برای اینکه بتوانیم خاصیت
+                و جول ستون بندی را پیاده سازی کنیم حتما باید بقیه دیو ها داخل دیوی با کلاس  col
+                قرار داشته باشندrow-->
+                <div class="row">
+                    <div class="col-md-3 col-lg-3">
+
+                        <!--لوگوی 90تی وی و متن زیر ان-->
+                        <!--برای اینکه زیرهم بیفتند و هر دیو یک سطر از دیو پدر خود را اشال کند از
+                        row
+                        استفاده میکنیم-->
+                        <!-----###########################################------>
+                        <!--برای اینکه مطمين باشیم همیشه تصویر و متن در سمت راست باشند
+                        از دستور زیر استفاده کردیم-->
+                        <!--justify-content-start-->
+                        <!--به خود تگ ایمیج و تگ اسپن و متن دادیم
+                        چون اگر به دیو انها بدهیم کنار هم قرار میگیرند-->
+                        <img src="image/index.png" alt="90tv" />
+                        <div class="row justify-content-start">
+                        </div>
+                        <div class="row justify-content-start ">
+                            <span>وب سایت رسمی 90</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6">
+
+                        <!--تبلیغات-->
+                        <!--برای اینکه زیرهم بیفتند و هر دیو یک سطر از دیو پدر خود را اشال کند از
+                        row
+                        استفاده میکنیم-->
+                        <img src="image/logo.gif" alt="Alternate Text" />
+
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <!--برای اینکه مطمين باشیم همیشه تصویر و متن در سمت چپ باشند
+                        از دستور زیر استفاده کردیم-->
+                        <!--justify-content-end-->
+
+                        <div class="row justify-content-end">
+                            <img src="image/index1.png" alt="chanel 3" />
+                        </div>
+                        <div class="row justify-content-end">
+                            <span class="">شبکه سه سیما</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <!--end container-->
+    <!--script-->
+
+</body>
+</html>
