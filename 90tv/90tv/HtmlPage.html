@@ -2,19 +2,22 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>90 Tv</title>
 
     <!--bootstrap-->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet" />-->
     <!--Bootstrap-rtl-->
     <link href="css/bootstrap-rtl-moosavi.css" rel="stylesheet" />
     <!--<link href="css/bootstrap-rtl.min.css" rel="stylesheet" />-->
-    <!--My css style sheet-->
+    <!--fontawsome-->
+    <link href="font/fontawesome-free-5.4.1-web/css/all.css" rel="stylesheet" />
+  <!--My css style sheet-->
     <link href="css/StyleSheet.css" rel="stylesheet" />
-</head>
+    </head>
 <body>
     <!-- General container-->
-    <div id="container" class="container-fluid" style="background-color:khaki">
+    <div id="container" class="container-fluid">
 
         <!--header-->
         <!--برای اینکه در سایز
@@ -22,11 +25,17 @@
         هدر حذف شود و در سایز
         وبزرگتر هدر نمایش داده شود از دستورmd
         استقاده کردیمd-none d-md-block-->
-        <div id="header" class="container-fluid d-none d-sm-block " style="background-color:chartreuse">
+        <div id="header" class="container-fluid d-none d-md-block pt-2">
 
             <!--برای اینکه فاصله بگیرند از کنار و وسط قرار بگیرند-->
             <div class="container">
-
+                <!--به جای کاز طیر میتوانستیم به جای
+                row
+                کلاس d-flex
+                به همراه کلاس
+                justify-content-between or around
+                بدهیم خودش کار اینکه دیوهای داخل دیو d-flex
+                را مرتب کند انجام میداد-->
                 <!--برای اینکه بتوانیم خاصیت
                 و جول ستون بندی را پیاده سازی کنیم حتما باید بقیه دیو ها داخل دیوی با کلاس  col
                 قرار داشته باشندrow-->
@@ -41,23 +50,30 @@
                         <!--برای اینکه مطمين باشیم همیشه تصویر و متن در سمت راست باشند
                         از دستور زیر استفاده کردیم-->
                         <!--justify-content-start-->
-                        <!--به خود تگ ایمیج و تگ اسپن و متن دادیم
-                        چون اگر به دیو انها بدهیم کنار هم قرار میگیرند-->
-                        <img src="image/index.png" alt="90tv" />
+                        <!--این دستور باید حتما همراه
+                        row or d-flex or ...
+                        باشد-->
+                        <!--به خود تگ ایمیج و تگ اسپن و متن دادیم-->
+
                         <div class="row justify-content-start">
+                            <img src="image/index.png" alt="90tv" />
                         </div>
                         <div class="row justify-content-start ">
                             <span>وب سایت رسمی 90</span>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-6">
+                    <!--برای اینکه وسط چین شوپ محتویات دیو از دستور
+                    text-cnter
+                    استفاده کردیم-->
+                    <div class="col-md-6 col-lg-6 text-center">
 
                         <!--تبلیغات-->
                         <!--برای اینکه زیرهم بیفتند و هر دیو یک سطر از دیو پدر خود را اشال کند از
                         row
                         استفاده میکنیم-->
-                        <img src="image/logo.gif" alt="Alternate Text" />
+
+                        <div class="d-flex justify-content-center"><img src="image/logo.gif" alt="Alternate Text" /></div>
 
                     </div>
                     <div class="col-md-3 col-lg-3">
@@ -68,15 +84,74 @@
                         <div class="row justify-content-end">
                             <img src="image/index1.png" alt="chanel 3" />
                         </div>
+                        <br />
                         <div class="row justify-content-end">
-                            <span class="">شبکه سه سیما</span>
+                            <span>شبکه سه سیما</span>
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
+        <!--end header-->
+        <!--منوبار  navbar-->
 
+        <div id="menu">
+
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <a class="navbar-brand  fa fa-home pr-2 ml-2" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                    <!--With the move to flexbox in v4, you can use margin utilities like
+                    .mr-auto or .ml-auto
+                        to force sibling columns away from one another.-->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="#">اخبار ورزشی <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">اخبار داغ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">نقل وانتقالات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">نمره بازیکنان</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                تیم ها
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">پرسپولیس</a>
+                                <a class="dropdown-item" href="#">استقلال</a>
+                                <a class="dropdown-item" href="#">تراکتورسازی</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">بازیکنان برتر</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">برترین گل ها</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">روزنامه</a>
+                        </li>
+                    </ul>
+                     
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control ml-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">بگرد!</button>
+                    </form>
+                </div>
+            </nav>
+
+        </div>
+        <!--End navbar-->
 
 
 
@@ -86,6 +161,7 @@
     </div>
     <!--end container-->
     <!--script-->
-
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>

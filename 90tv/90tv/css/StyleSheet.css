@@ -1,1 +1,23 @@
 ﻿
+@font-face {
+    font-family: 'yekan';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../font/yekan/Yekan.eot') format('embedded-opentype'),url('../font/yekan/Yekan.ttf') format('truetype'),url('../font/yekan/Yekan.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family:'yekan',tahoma !important;
+    background-color: rgb(251,251,251);
+}
+
+#header{
+    color: brown;
+   
+}
