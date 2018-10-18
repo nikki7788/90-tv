@@ -19,5 +19,9 @@ body {
 
 #header{
     color: brown;
-   
-}
+   }
+
+ .advers div img{
+     border-radius: 3px;
+     
+ }
