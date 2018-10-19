@@ -13,15 +13,63 @@
 }
 
 body {
-    font-family:'yekan',tahoma !important;
+    font-family: 'yekan',tahoma !important;
     background-color: rgb(251,251,251);
 }
 
-#header{
-    color: brown;
-   }
 
- .advers div img{
-     border-radius: 3px;
-     
- }
+a {
+    text-align: center;
+    color: black;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: green;
+    }
+
+.list-list {
+    list-style: none;
+    line-height: 25px;
+    padding-top: 8px;
+}
+
+    .list-list a {
+        font-size: 12px;
+    }
+.ul-title-tabs-color{
+    color: #ff6a00;
+}
+
+
+#header {
+    color: brown;
+}
+
+.advers div img {
+    border-radius: 3px;
+}
+
+.news-header {
+    color: green;
+    margin-right: 10px;
+}
+
+.hr-divider {
+    color: green;
+    border: 1px solid;
+    margin-top: 8px;
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.last-info {
+    border-radius: 2px;
+    border: 1px solid rgb(200,200,200);
+    background-color: white;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-left: 3px;
+    margin-bottom: 10px;
+}
