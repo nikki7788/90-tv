@@ -37,7 +37,8 @@ a {
     .list-list a {
         font-size: 12px;
     }
-.ul-title-tabs-color{
+
+.ul-title-tabs-color {
     color: #ff6a00;
 }
 
@@ -51,7 +52,7 @@ a {
 }
 
 .news-header {
-    color: green;
+    color: #ff6a00;
     margin-right: 10px;
 }
 
@@ -72,4 +73,92 @@ a {
     padding-right: 10px;
     padding-left: 3px;
     margin-bottom: 10px;
+}
+
+#newspapers {
+    border-radius: 2px;
+    border: 1px solid rgb(200,200,200);
+    background-color: white;
+    padding-top: 8px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h6 {
+    color: rgb(248, 248, 248);
+}
+
+#poll {
+    border-radius: 2px;
+    border: 1px solid rgb(200,200,200);
+    background-color: white;
+    padding-top: 8px;
+    padding-right: 6px;
+    padding-left: 6px;
+    /*padding-bottom: 10px;*/
+    margin-bottom: 10px;
+}
+
+#poll-statement {
+    padding-right: 12px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+#poll-content {
+    padding-top: 15px;
+    /*font-size: 13px;*/
+}
+
+    #poll-content td {
+        height: 10px;
+        padding: 5px;
+    }
+
+#main-carousel {
+    border: 1px solid rgb(200,200,200);
+    border-radius: 2px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+    #main-carousel img + div {
+        background-color: white;
+        line-height: 1.5;
+        padding: 5px 5px 20px 5px;
+        font-size: 12px;
+        height: 100px;   /*برای اینکه دیو اصلی
+            main-carousel
+          با تغیرر تعداد خطوط نوشته هاو کپشن ها تغییر ارتفاع ندهد.*/
+            
+    }
+
+    #main-carousel img {
+        width: 100%;    /*برای اینکه سایز تصویر فیت شود با سایز دیو پدرش */
+        height: 250px; /*برای اینکه ارتفاع دیو اصلی پدر از نطر ارتفاعی تغییر سایز ندهد در عکس های سایز مختلف*/
+        border-radius: 2px;
+    }
+.advers-main-content img{
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 12px;
+}
+.special-news{
+    border-radius: 2px;
+    border: 1px solid rgb(200,200,200);
+    background-color: white;
+    padding-top: 8px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.special-content{
+    text-align: right;
+    padding-right: 5px;
+    line-height: 1.5;
+    font-size: 13px;
+    color: rgb(60,60,60);
 }
